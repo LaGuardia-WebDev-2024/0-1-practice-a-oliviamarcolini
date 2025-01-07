@@ -1,28 +1,420 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="/script.js" defer></script>
+    <title>Olivia Monteiro's Portfolio</title>
+    <meta charset="utf-8" />
+    <style>
+    @font-face {
+  font-family: autumn;
+  src: url(https://cdn.glitch.global/734ea171-6f08-4e3d-99cd-234da3ea325d/Aston%20Script%202.ttf?v=1732200382802)
+}
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-</head>
+@font-face{
+  font-family: type;
+  src: url(https://cdn.glitch.global/734ea171-6f08-4e3d-99cd-234da3ea325d/rough_typewriter.otf?v=1732245997652)
+}
 
-<body>
-  <h1>My Tuesday Schedule</h1>
-  <ol>
-    <li>Period 1 is AP COMP GOV </li>
-    <li>Period 2 is Creative Writing </li>
-    <li>Period 3 is Web Dev </li>
-    <li>Period 4 is Lunch </li>  
-    <li>Period 5 is ADV Painting </li>  
-    <li>Period 6 is ADV Painting </li>  
-    <li>Period 7 is Art History </li>  
-    <li>Period 8 is Spanish </li>  
-    <li>Period 9 is AP Psych </li>  
-    <li>Period 10 is Phy Ed </li>  
-  </ol>
+@font-face{
+  font-family: heading;
+  src: url(https://cdn.glitch.global/734ea171-6f08-4e3d-99cd-234da3ea325d/ZANIE-BROVIA.ttf?v=1732331049476)
+}
 
+@font-face{
+  font-family: elegant;
+  src: url(https://cdn.glitch.global/734ea171-6f08-4e3d-99cd-234da3ea325d/ELEGANT%20TYPEWRITER%20Light.ttf?v=1732389857946)
+}
+
+/* Top Cover
+ */
+
+#title {
+  background-color: transparent;
+  font-size: 80px;
+  font-family: autumn;
+  font-style: bold;
+  color: #bf8c60;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.content {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.main-photo {
+  border: 3px solid #755630;
+  padding: 10px;
+  height: 380px;
+  background-color: #f2dabd;
+}
   
-</body>
+#info { 
+  height: 390px;
+  width: 800px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  background-color: transparent;
+  margin-right: 20px;
+  margin-left: 20px;
+}
 
+#description {
+  font-size: 25px;
+  font-family: type;
+  background-color: #f2dabd;
+  padding: 10px;
+  overflow: auto;
+  box-shadow: 5px 10px 8px black;
+  border: 3px solid #755630;
+}
+
+      
+body {
+  background-image: url("https://img.freepik.com/premium-photo/night-park-landscape-abstract-view-alley-trees-lights-autumn-blurred-background_548821-48051.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+h2 {
+  color: #bf8c60;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+  font-size: 3em;
+  font-family: heading;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+
+hr {
+  height: 8px;
+  width: 280px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  background-color: #bf8c60;
+}
+
+/* Photo Gallery
+ */
+
+.photos {
+  object-fit: cover;
+  border-radius: 15px 15px;
+}
+
+/* Art Gallery
+ */
+
+.art-gallery {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.painting {
+  height: 350px;
+  border: 2px solid #755630;
+  padding: 7px;
+  background-color: #f2dabd;
+  box-shadow: 5px 10px 8px black;
+}
+
+.art-description {
+  background-color: rgba(242, 218, 189, 0.8);
+  color: #755630;
+  font-family: elegant;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 6px;
+  border-radius: 15px 15px;
+}
+
+.desc {
+  align-items: center;
+      }
+
+#PDF {
+   height: 500px; 
+  width: 500px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div id="info">
+        <h1 id="title">Olivia's Portfolio</h1>
+        <hr />
+        <div id="description">
+          I'm Olivia Marcolini Monteiro, 
+          a Brazilian 17 year-old senior art major at Laguardia High School. 
+          My passion for visual art has inspired me to creatie unique 
+          and personal artworks that reflect my culture an life experiences. <br>
+          I hope you enjoy my portfolio!
+        </div>
+      </div>
+
+      <img
+        src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/IMG_7739%202.jpg?v=1736279665324"
+        class="main-photo"
+      />
+    </div>
+
+    <br />
+
+  <h2>
+    Art Gallery
+    </h2>
+    
+    <div class="art-gallery">
+      <div class="desc">
+        <img 
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/E2CB67EE-33D1-4F52-AC28-2EE83D313B8D.JPG?v=1736272866842"
+             class="painting"
+             >
+        <p class="art-description">
+          "No Way Out" <br>
+          (4 piece series) <br>
+          Acrylic on paper <br> 
+          2023 <br>
+          14" x 17" each <br>
+        </p>
+      </div>
+      
+      <div class="desc">
+        <img
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/IMG_6344.jpeg?v=1736272962272"
+             class="painting">
+        <p class="art-description">
+          "No Way Out" <br>
+          Graphite on paper <br>
+          2023 <br>
+          8" x 12" <br>
+        </p>
+      </div>
+      
+      <div class="desc">
+        <img
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/Screenshot%202024-12-20%20at%207.07.57%20PM-min%202.png?v=1736272909447"
+             class="painting"
+             >
+        <p class="art-description">
+          "Rotting" <br>
+          Acrylics on canvas <br>
+          2023 <br>
+          20" x 16" <br>
+
+        </p>
+      </div>
+      
+      <div class="desc">
+        <img
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/Screenshot%202024-12-20%20at%207.09.09%20PM.png?v=1736272968312"
+             class="painting">
+        <p class="art-description">
+          "Grandma's House" <br>
+          Acrylics on canvas <br>
+          2024 <br>
+          24" x 18" <br>
+        </p>
+      </div>
+    </div>
+    
+    <div class="art-gallery">
+      <div class="desc">
+        <img 
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/IMG_7413%203.20.21%20PM.jpeg?v=1736272925661"
+             class="painting"
+             >
+        <p class="art-description">
+          "American Birthday" <br>
+          Watercolor on paper <br>
+          2023 <br>
+          11" x 17" <br>
+
+        </p>
+      </div>
+      
+      <div class="desc">
+        <img
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/Screenshot%202024-12-20%20at%207.08.28%20PM.png?v=1736272918700"
+             class="painting">
+        <p class="art-description">
+          "Beach Life" <br>
+          Still life from observation <br>
+          Acrylics on canvas <br>
+          2024 <br>
+          12" x 16" <br>
+        </p>
+      </div>
+      
+      <div class="desc">
+        <img
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/Screenshot%202024-12-27%20at%2011.12.43%20PM.png?v=1736272937407"
+             class="painting"
+             >
+        <p class="art-description">
+          "Summer Days" <br>
+          Still life from observation <br>
+          Acrylics on canvas paper <br>
+          2024 <br>
+          9" x 12" <br>
+        </p>
+      </div>
+      
+      <div class="desc">
+        <img
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/IMG_6339.jpeg?v=1736272946368"
+             class="painting">
+        <p class="art-description">
+          "Train of Thought" <br>
+          Tempera on paper <br>
+          2023 <br>
+          9" x 11" <br>
+        </p>
+      </div>
+    </div>
+    
+    <div class="art-gallery">
+      <div class="desc">
+        <img 
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/Screenshot%202024-12-25%20at%202.15.22%20AM.png?v=1736272932468"
+             class="painting"
+             >
+        <p class="art-description">
+          "City Underwater" <br>
+          Alcohol markers on paper <br>
+          2023 <br>
+          20" x 16" <br>
+
+        </p>
+      </div>
+      
+      <div class="desc">
+        <img
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/Screenshot%202025-01-01%20at%205.34.24%20PM.png?v=1736272922728"
+             class="painting"
+             >
+        <p class="art-description">
+          "Tea Time" <br>
+          Acrylics on canvas <br>
+          2024 <br>
+          9" x 12" <br>
+        </p>
+      </div>
+      
+      <div class="desc">
+        <img
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/IMG_1661.jpeg?v=1736272934892"
+             class="painting">
+        <p class="art-description">
+          "Father and Daughter Portrait" <br>
+          Watercolor on paper <br>
+          2022 <br>
+          9" x 11" <br>
+        </p>
+      </div>
+    </div>
+    
+    <div class="art-gallery">
+      <div class="desc">
+        <img
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/IMG_4476.jpeg?v=1736272959549"
+             class="painting"
+             >
+        <p class="art-description">
+          "Healing Yourself" <br>
+          Graphite and acrylics on paper <br>
+          2023 <br>
+          9" x 11" <br>
+        </p>
+      </div>
+      
+      <div class="desc">
+        <img
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/IMG_0650.jpeg?v=1736272944081"
+             class="painting">
+        <p class="art-description">
+          "Authoritarianism" <br>
+          2023 <br>
+          Digital <br>
+        </p>
+      </div>
+      <div class="desc">
+        <img 
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/Screenshot%202024-12-25%20at%201.50.44%20AM.png?v=1736272913730"
+             class="painting"
+             >
+        <p class="art-description">
+          "Reflection of Me" <br>
+          Oil on canvas <br>
+          2024 <br>
+          24" x 18"
+
+        </p>
+      </div>
+      
+      <div class="desc">
+        <img
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/IMG_3581.jpeg?v=1736272915892"
+             class="painting">
+        <p class="art-description">
+          "Hanging On" <br>
+          Charcoal on paper <br>
+          2022 <br>
+          22" x 14" <br>
+        </p>
+      </div>
+    </div>
+    
+     <div class="art-gallery"
+          >
+      <div class="desc">
+        <img
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/IMG_9772.JPG?v=1736272939898"
+             class="painting">
+        <p class="art-description">
+          "Rebirth" <br>
+          Acrylics on canvas <br>
+          2024 <br>
+          11" x 14" <br>
+        </p>
+      </div>
+       <div class="desc">
+        <img
+             src="https://cdn.glitch.global/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/IMG_6136.jpg?v=1736272952202"
+             class="painting">
+        <p class="art-description">
+          "Late Night Conversations" <br>
+          Oil on canvas <br>
+          2024 <br>
+          24" x 36" <br>
+        </p>
+      </div>
+    </div>
+    
+    <div class="art-gallery">
+     <div class="desc">
+        <object class="painting" id="PDF"
+                data="https://cdn.glitch.me/b18e68eb-3a85-4b34-a8cc-218fadd21ea9/OLIVIAMARCOLINI_FINALCOMIC.pdf?v=1736275056632"
+>
+        </object>
+        <p class="art-description">
+          "Hidden" <br>
+          2024 <br>
+          Digital Comic <br>
+        </p>
+      </div>
+    </div>
+      
+  </body>
 </html>
